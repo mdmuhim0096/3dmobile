@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: #123;
+}
+
+.container{
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper{
+    perspective: 1000px;
+}
+
+.book{
+    transform-style: preserve-3d;
+    width: 20em;
+    height: 30.5em;
+    transform-origin: center center;
+    position: relative;
+}
+
+.book > div{
+    position: absolute;
+    height: 30em;
+}
+
+.fornt{
+    width: 20em;
+    transform: translate3d(0,0,0.6em);
+    display: flex;
+    justify-content: center;
+    align-content: center !important;
+}
+
+.back{
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(to bottom right, #59c5d6, #7dd7e5);
+    transform: rotateY(180deg) translate3d(0,0,0.6em);
+}
+
+.side{
+    width: 1.2em;
+    transform: rotateY(-90deg) translate3d(0,0, 0.60em);
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.pagese{
+    width: 1.2em;
+    background-color: deepskyblue;
+    transform: rotateY(90deg) translate3d(0,0,19.40em);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn{
+    width: 6px;
+    height: 160px;
+    border-radius: 10px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.v{
+    width: 10px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+}
+
+.v .plus, .minus{
+    width: 6px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.powerBtn{
+    width: 6px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+/* mobile section */
+
+.display{
+   width: 100%;
+   height: 99.2%;
+   background: url("Xiaomi-Poco-X2-Wall-DroidViews-03.jpg") no-repeat center center / 100%;
+   border: 3px solid;
+}
+
+
+.display .camera{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0.3rem auto;
+}
+
+.side .sim{
+    width: 7px;
+    height: 70px;
+    background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.side .sim .key{
+    width: 3px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+
+.back .module{
+    width: 100%;
+    height: 23%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A4CCD0;
+    border: 2px solid #50b2d0;
+    border-left: none;
+    border-right: none;
+}
+
+.back .module .camera{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #50b2d0;
+}
+
+.sensor{
+    width: 44px;
+    height: 44px;
+    background: url("camera-lens-transparent-11.png") no-repeat center center / 100%;
+    border-radius: 50%;
+}
+
+.back .module .space{
+    width: 63.5%;
+    height: 100%;
+    border: 2px solid #50b2d0;
+    border-left: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back .module .space .box:first-child{
+    border-bottom: 2px solid #50b2d0;
+}
+.back .module .space .box{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+}
+
+.amni{
+    width: 20px;
+    height: 20px;
+    background: repeating-conic-gradient(#737575, #9bd9f2, #737575, #9bd9f2,#737575, #9bd9f2, #737575, #9bd9f2);
+    display: inline-block;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+ .back .module .space .box strong{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ .back .module .space .box strong span:last-child{
+    font-size: 20px;
+}
+
+ .back .module .space .box:last-child strong span:last-child{
+    font-size: 10px;
+}
+
+.felash{
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(#ffffff,#ffffff66,#00000033, #0000001a);
+    display: inline-block;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.speed{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    border: 1px solid #50b2d0;
+    border-radius: 3px;
+}
+.speed span{
+    color: #1680a1;
+    font-size: 12px;
+}
